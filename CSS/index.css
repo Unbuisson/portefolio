@@ -1,0 +1,213 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #F1FAFD;
+    color: #1D3E56;
+}
+
+header {
+    background: #F9FEFF;
+    padding: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#liste_navigation{ 
+    display: flex; 
+    list-style: none; 
+
+}
+
+#navigation a{
+    outline: none;
+    text-decoration: none;
+    color: #00749E;
+}
+
+
+#navigation a:hover{
+    border-bottom: solid 3px #BEE7F5;
+    background-color: #D1F0FA ;
+}
+
+
+.separ{
+    margin: 10px;
+    color: red;
+}
+
+
+
+.separ:hover{
+    color: black
+}
+
+.droite{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo_gabin{
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+}
+
+.gauche{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    
+}
+
+.gauche div{
+    width: 50%;
+    height: 50%;
+
+}
+
+#presentation {
+    display: flex;
+    background: linear-gradient(60deg, #46A758 38%, #0D74CE);
+    color: white;
+    width: 100%;
+    box-shadow: inset 0px -2px 5px 0px rgba(0,0,0,1);
+    padding: 40px;
+    min-height: 600px;
+
+}
+
+
+#projets{
+    background-color: #F1FAFD;
+}
+
+.carte {
+    width: 90%;
+    margin: 3%;
+    background: #E1F6FD;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: #027864 solid;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.carte:hover { 
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#contact{
+    width: 93%;
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.picto{
+    width: 30px;
+    height: 30px;
+    border-right: solid lightgray 1px ;
+    margin-right: 6px;
+    padding: 10px;
+}
+
+#contact a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.titre_projet{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.techno{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+
+    #navigation {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    #liste_navigation {
+        padding: 0;
+    }
+
+    #presentation {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .gauche{
+        width: 100%;
+    }
+    .droite {
+        width: 100%;
+    }
+
+    .gauche div {
+        width: 100%;
+    }
+
+    #photo_gabin {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .carte {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    #contact {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+}

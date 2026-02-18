@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabin Courteille Portfolio</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <header>
+        <div id="navigation">
+            <p>Un pied devant l'autre</p>
+            <ul id="liste_navigation">
+                <li class="separ"><a href="#presentation">Présentation</a></li>
+                <li class="separ"><a href="#projet">Projets</a></li>
+                <li class="separ"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="presentation">
+        <div class="droite">
+            <img src="image/Gabin_carre.png" id="photo_gabin" alt="Photo de Gabin Courteille">
+        </div>
+        <div class="gauche">
+            <div>
+                <h1>Gabin Courteille </h1>
+                <p>Étudiant en deuxième année de cycle préparatoire à 3iL Ingénieurs</p>
+                <p>Intéressé par l'algorithmique, le développement logiciel et l'analyse de données.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projet">
+        <h2>Mes Projets</h2>
+        <div class="projets">
+            <div>
+                <h3>Projets réalisés</h3>
+                <a href="https://github.com/Unbuisson/Projet-Java" target="_blank" class="carte">
+                    <p class="titre_projet">Projet Application Gestion d'école</p>
+                    <p>Il s'agit d'un projet fait en console en java. L'objectif était de créer une application fonctionnant sur des bases de données pour gérer une école. Il y a 3 utilisateurs : Administrateur, Enseignant et Élève. L'application gérait les notes, les emplois du temps, les classes, l'appel. </p>
+                    <p class="techno">Technologies utilisées : </p>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQLite</li>
+                    </ul>
+                </a> 
+                <a href="https://github.com/Unbuisson/Projet-tri" target="_blank" class="carte">
+                    <p class="titre_projet" id="projet_tri">Projet comparaison algorithme de tri</p>
+                    <p>Projet visant à comparer l'efficacité de différents algorithmes de tri à travers une visualisation interactive et une analyse de performance.<br></p>
+                    <ul>
+                        <li>Visualisation en temps réel</li>
+                        <li>Comparaison sur grands échantillons</li>
+                        <li>Exécution parallèle</li>
+                        <li>Export CSV</li>
+                        <li>Génération de graphiques</li>
+                    </ul>
+                    <p class="techno">Technologies utilisées : </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Tkinter</li>
+                        <li>CSV</li>
+                        <li>Multiprocessing</li>
+                        <li>dataclass</li>
+                    </ul>
+                </a>
+            </div>
+            <div>
+                <h3>Projets en cours : </h3>
+                <div class="carte">
+                    <p class="titre_projet">Projet Pratz</p>
+                    <p>Création d'une plateforme de vente de chips </p>
+                    <p class="techno">Technologies utilisées : </p>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JS</li>
+                        <li>XAMPP</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div class="carte">
+                    <p class="titre_projet">Projet Linea</p>
+                     <p>Création d'un jeu en 2 dimensions avec application de la gravité</p>
+                    <p class="techno">Technologies utilisées : </p>
+                    <ul>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>Contact</h4>
+        <div id="contact">
+            <p><img src="image/telephone.png" class="picto">Téléphone : 07 69 40 60 67</p>
+            <p><img src="image/gmail.png" class="picto"> gabincrtll@gmail.com</p>
+            <p><a href="https://www.linkedin.com/in/gabin-courteille-338a3a3a9" target="_blank"><img src="image/linkedin.png" class="picto">Gabin Courteille</a></p>
+            <p><a href="https://github.com/Unbuisson" target="_blank"><img src="image/git.png" class="picto"> unBuissson</a></p>
+        </div>
+    </footer>
+
+    <script src="JS/index.js"></script>
+</body>
+</html>
